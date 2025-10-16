@@ -1,10 +1,12 @@
-import "./App.css"
+
+
 function Title() {
   return (
-    <h1>
-      I am the Title!
-    </h1>
+    <div>
+      <h1> Hello Shubham </h1>
+    </div>
   )
 }
+
 export default Title;
 // export {Title}; -> named export (    export multiple values)
