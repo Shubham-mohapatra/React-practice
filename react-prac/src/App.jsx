@@ -2,6 +2,7 @@ import AmazonCards from "./AmazonCards.jsx"
 import AmazonCardsTab from "./AmazonCardsTab.jsx"
 import "./App.css"
 import Button from "./Button.jsx"
+import Form from "./Form.jsx"
 import ProductTab from "./ProductTab.jsx"
 
 // to render every componenet we put all the components in a div tag 
@@ -24,6 +25,7 @@ function App() {
       <h3 style={headingStyles}>BlockBuster Deals | Shop Now</h3>                                                
       <AmazonCardsTab/>
       <Button/>
+      <Form/>
     </>
   )
 }
