@@ -1,11 +1,40 @@
 .Product {
-    border : 1px solid white;
-    margin-bottom : 5px;
-    border-radius: 14px;
+    border: 1px solid white;
+    margin: 10px auto;
+    border-radius: 40px;
     background-color: #282c28;
-    color  : white;
-    padding : 40px;
-    font-family: Arial;
-    text-align: centre;
+    color: white;
+    padding: 50px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    width: clamp(300px, 80%, 600px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.Product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.Product h3 {
+    margin-top: 0;
+    color: #61dafb;
+    font-size: 1.5rem;
+}
+
+.Product p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.Product ul {
+    text-align: left;
+    display: inline-block;
+    margin: 15px 0;
+}
+
+.Product li {
+    margin: 5px 0;
+    padding-left: 5px;
 }
