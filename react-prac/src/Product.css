@@ -1,9 +1,9 @@
 .Product {
-    border: 1px solid white;
+    border: 1px solid #61dafb;
     margin: 10px auto;
     border-radius: 40px;
-    background-color: #282c28;
-    color: white;
+    background-color: black; /* Changed to darker blue */
+    color: #e6f3ff; /* Changed to light blue text */
     padding: 50px;
     font-family: Arial, sans-serif;
     text-align: center;

@@ -1,0 +1,35 @@
+.AmazonCard {
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1;
+    min-width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.AmazonCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.AmazonCard h3, .AmazonCard h4 {
+    color: #232f3e;
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: "Amazon Ember", Arial, sans-serif;
+}
+
+.AmazonCard p {
+    color: #565959;
+    font-size: 14px;
+    margin: 10px 0;
+    line-height: 1.4;
+}
