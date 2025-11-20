@@ -1,3 +1,4 @@
+import { Button as ShadcnButton } from "@/components/ui/button"
 
 function doSomething(){
     console.log("button was clicked");
@@ -8,25 +9,36 @@ function hello(){
 }
 
 function Button(){
-    let buttonStyles = {
-        margin: "0 10px", // 10px horizontal spacing
-        padding: "10px 20px",
-        fontSize: "16px",
-        cursor: "pointer"
-    };
-
-function Event(event){
-    console.log(event); // prints the event object - > predefined methods and attributes -> can see event type, target event 
-}
+    function Event(event){
+        console.log(event); // prints the event object - > predefined methods and attributes -> can see event type, target event 
+    }
     
     return (
-        <div>
-            <button onClick={doSomething} style={buttonStyles}>Click Me</button>
-            <button onMouseOver={hello} style={buttonStyles}>Hello</button>
-             <button onDoubleClick={hello} style={buttonStyles}>Double Click</button>
-             <button onClick={Event} style={buttonStyles}>Test</button>
+        <div className="flex gap-3 flex-wrap justify-center">
+            {/* Default variant */}
+            <ShadcnButton onClick={doSomething}>Click Me</ShadcnButton>
+            
+            {/* Secondary variant */}
+            <ShadcnButton variant="secondary" onMouseOver={hello}>Hello</ShadcnButton>
+            
+            {/* Outline variant */}
+            <ShadcnButton variant="outline" onDoubleClick={hello}>Double Click</ShadcnButton>
+            
+            {/* Destructive variant */}
+            <ShadcnButton variant="destructive" onClick={Event}>Test</ShadcnButton>
+            
+            {/* Ghost variant */}
+            <ShadcnButton variant="ghost">Ghost</ShadcnButton>
+            
+            {/* Link variant */}
+            <ShadcnButton variant="link">Link</ShadcnButton>
+            
+            {/* Different sizes */}
+            <ShadcnButton size="sm">Small</ShadcnButton>
+            <ShadcnButton size="lg">Large</ShadcnButton>
         </div>
     );
 }
 
-export default Button; 
+export default Button;
+ 

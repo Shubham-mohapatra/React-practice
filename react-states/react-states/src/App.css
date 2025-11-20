@@ -5,6 +5,32 @@
   text-align: center;
 }
 
+/* Animated text styling */
+.revealed-char {
+  color: #646cff;
+  font-weight: 600;
+  text-shadow: 0 0 10px rgba(100, 108, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.encrypted-char {
+  color: #888;
+  opacity: 0.6;
+  animation: glitch 0.3s infinite;
+}
+
+@keyframes glitch {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  75% {
+    transform: translateX(2px);
+  }
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
